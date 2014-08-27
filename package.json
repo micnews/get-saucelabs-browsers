@@ -1,0 +1,19 @@
+{
+  "name": "saucelabs-browser-config",
+  "version": "0.0.0",
+  "description": "Given browser names & versions, get webdriver compatible capabilities from saucelabs available browsers",
+  "main": "get_saucelabs_browsers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "saucelabs",
+    "webdriver"
+  ],
+  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {}
+}
