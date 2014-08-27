@@ -1,10 +1,10 @@
-# saucelabs-browser-config
+# get-saucelabs-browsers
 
-Given browser names & versions, get webdriver compatible config from saucelabs available browsers.
+Given browser names & versions, get webdriver compatible capabilities from saucelabs available browsers
 
-[![NPM](https://nodei.co/npm/saucelabs-browser-config.png?downloads&stars)](https://nodei.co/npm/saucelabs-browser-config/)
+[![NPM](https://nodei.co/npm/get-saucelabs-browsers.png?downloads&stars)](https://nodei.co/npm/get-saucelabs-browsers/)
 
-[![NPM](https://nodei.co/npm-dl/saucelabs-browser-config.png)](https://nodei.co/npm/saucelabs-browser-config/)
+[![NPM](https://nodei.co/npm-dl/get-saucelabs-browsers.png)](https://nodei.co/npm/get-saucelabs-browsers/)
 
 ## Kudos
 
@@ -13,7 +13,7 @@ Most of the code for this project is extracted from [zuul](https://www.npmjs.org
 ## Installation
 
 ```
-npm install saucelabs-browser-config
+npm install get-saucelabs-browsers
 ```
 
 ## Example
