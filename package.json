@@ -1,6 +1,6 @@
 {
   "name": "get-saucelabs-browsers",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Given browser names & versions, get webdriver compatible capabilities from saucelabs available browsers",
   "main": "get_saucelabs_browsers.js",
   "scripts": {
