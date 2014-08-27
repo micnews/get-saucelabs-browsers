@@ -34,18 +34,40 @@ var getBrowsers = require('./get_saucelabs_browsers')
           , platform: 'Linux'
         }
     ]
+    // alternative way to describe browsers
+  , browsers2 = [
+        'internet explorer/9..latest'
+      , 'chrome/latest/Linux'
+    ]
 
-getBrowsers(browsers, function (err, browsers) {
+getBrowsers(browsers, function (err, browserConfigs) {
   if (err) throw err
 
-  console.log('browsers', browsers)
+  console.log('browsers')
+  console.log(browserConfigs)
+  getBrowsers(browsers2, function (err, browserConfigs2) {
+    console.log('This should be equivalent with the browsers above')
+    console.log(browserConfigs2)
+  })
 })
 ```
 
 ### Output
 
 ```
-browsers [ { browserName: 'internet explorer',
+browsers
+[ { browserName: 'internet explorer',
+    version: '9',
+    platform: 'Windows 2008' },
+  { browserName: 'internet explorer',
+    version: '10',
+    platform: 'Windows 2008' },
+  { browserName: 'internet explorer',
+    version: '11',
+    platform: 'Windows 2012 R2' },
+  { browserName: 'chrome', version: '36', platform: 'Linux' } ]
+This should be equivalent with the browsers above
+[ { browserName: 'internet explorer',
     version: '9',
     platform: 'Windows 2008' },
   { browserName: 'internet explorer',

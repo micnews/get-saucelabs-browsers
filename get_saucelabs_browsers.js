@@ -1,4 +1,19 @@
 module.exports = function (browsers, callback) {
+  browsers = browsers.map(function (browser_config) {
+    if (typeof(browser_config) === 'string') {
+      browser_config = browser_config.split('/')
+      return {
+          name: browser_config[0]
+        , version: browser_config[1]
+        , platform: browser_config[2]
+      }
+    }
+
+    // assume it's an object
+    return browser_config
+  })
+
+
   require('./scout_browser')(function (err, all_browsers) {
     if (err)
       return callback(err)
