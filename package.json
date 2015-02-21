@@ -10,6 +10,10 @@
     "saucelabs",
     "webdriver"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micnews/get-saucelabs-browsers.git"
+  },
   "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com/)",
   "license": "MIT",
   "dependencies": {
